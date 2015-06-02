@@ -61,6 +61,7 @@ compare_means(RR.selective.spreadsheet, c("dgcat", "Country"))
 
 ## And New Zealand transcription error
 ## selective.spreadsheet.transcription <- with(RR.selective.spreadsheet, tapply( dRGDP, list(Country,dgcat), mean, na.rm=TRUE ))
+RR.selective.spreadsheet.transcription <- with(RR.selective.spreadsheet, tapply( dRGDP, list(Country,dgcat), mean, na.rm=TRUE ))
 RR.selective.spreadsheet.transcription["New Zealand",4] <- -7.9
 summary(RR.selective.spreadsheet.transcription)
 ## Table 3 Weights,Exclusion,Spreadsheet Error,Transcription

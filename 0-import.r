@@ -45,3 +45,4 @@ col_na <- sapply(all, function(x) all(is.na(x)))
 all <- all[!col_na]
 
 write.csv(all, "RR-processed.csv", row.names = FALSE)
+
